@@ -32,6 +32,14 @@ with the following:
 		import zippackages
 		import django
 
+Testing
+=======
+
+The included Makefile will create a test packages.zip file and ensure that the
+included package is accessible:
+
+		make test
+
 Known Limitations
 =================
 
