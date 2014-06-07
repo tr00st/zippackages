@@ -1,11 +1,14 @@
+Zip Packages
+============
+
 What?
-=====
+-----
 
 Zip Packages is a quick-and-dirty method to include a zip file full of packages 
 without needing to worry about where they are.
 
 Why?
-====
+----
 
 VPS hosting services normally limit the number of inodes that can be used on a
 given system. This can easily be as low as 250,000. With systems like Plesk
@@ -20,7 +23,7 @@ This can then mean that all requirements can be installed in less than 10
 inodes, rather than thousands.
 
 Usage
-=====
+-----
 
 Packagers should create a zip file called zippackages/packages.zip file
 containing the modules that should be made available. The module can then be
@@ -33,7 +36,7 @@ with the following:
 		import django
 
 Testing
-=======
+-------
 
 The included Makefile will create a test packages.zip file and ensure that the
 included package is accessible:
@@ -41,7 +44,7 @@ included package is accessible:
 		make test
 
 Known Limitations
-=================
+-----------------
 
 Given that Zip Packages must be imported with:
 
@@ -50,7 +53,7 @@ Given that Zip Packages must be imported with:
 Only one package zip file may be used.
 
 Licensing
-=========
+---------
 
 The code that forms this project is licensed under the MIT License. See
 LICENSE.md
