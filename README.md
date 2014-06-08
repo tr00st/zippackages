@@ -27,10 +27,14 @@ Usage
 
 Packagers should create a zip file called zippackages/packages.zip file
 containing the modules that should be made available. The module can then be
-made into a python package, and installed with PIP as normal. After importing
-the zippackages module, the contained modules will then be available when
-importing. For example, if packages.zip contains Django, then it may be used
-with the following:
+made into a python package, and installed with PIP as normal, eg:
+
+	make
+	pip install zippackages.zip
+
+After importing the zippackages module, the contained modules will then be
+available when importing. For example, if packages.zip contains Django, then it
+may be used with the following:
 
 		import zippackages
 		import django

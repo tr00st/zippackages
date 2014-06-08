@@ -1,3 +1,4 @@
 *.pyc
 zippackages/packages.zip
 .*.swp
+zippackages.zip
