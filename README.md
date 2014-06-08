@@ -36,8 +36,8 @@ After importing the zippackages module, the contained modules will then be
 available when importing. For example, if packages.zip contains Django, then it
 may be used with the following:
 
-		import zippackages
-		import django
+	import zippackages
+	import django
 
 Testing
 -------
@@ -45,14 +45,14 @@ Testing
 The included Makefile will create a test packages.zip file and ensure that the
 included package is accessible:
 
-		make test
+	make test
 
 Known Limitations
 -----------------
 
 Given that Zip Packages must be imported with:
 
-		import zippackages
+	import zippackages
 
 Only one package zip file may be used.
 
